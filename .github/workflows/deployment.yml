@@ -11,7 +11,7 @@ jobs:
       - name: Test application
         run: npm run test
   lint:
-        runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps: 
       - name: Get the repository code
         uses: actions/checkout@v3
@@ -20,7 +20,7 @@ jobs:
       - name: Liny application
         run: npm run lint
   build:
-              runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps: 
       - name: Get the repository code
         uses: actions/checkout@v3
@@ -30,4 +30,3 @@ jobs:
         run: npm run build
       - name: Deploy
         run: echo Deploying ...
-        
